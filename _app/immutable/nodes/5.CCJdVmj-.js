@@ -189,7 +189,6 @@ var le = {
 			postcss: "^8.4.38",
 			prettier: "^3.1.1",
 			"prettier-plugin-svelte": "^3.1.2",
-			"rollup-plugin-copy": "^3.5.0",
 			svelte: "^5.0.0-next.1",
 			"svelte-check": "^3.6.0",
 			tailwindcss: "^3.4.1",

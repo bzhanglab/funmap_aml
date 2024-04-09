@@ -30,11 +30,11 @@ var ve = X(
 );
 function fe(y, f) {
 	re(f, !0);
-	let p;
-	const h = R(f, "dag_options", 11, () => ({})),
+	let m;
+	const p = R(f, "dag_options", 11, () => ({})),
 		j = R(f, "table_data", 11, () => []),
 		G = R(f, "color_info", 11, () => ({})),
-		o = de(h(), { title: { text: "Clique Graph" } });
+		o = de(p(), { title: { text: "Clique Graph" } });
 	let u;
 	function _(t) {
 		const d = Number.parseFloat(t);
@@ -104,13 +104,13 @@ function fe(y, f) {
 		}
 		b.appendChild(z), u.appendChild(b);
 	}
-	let m;
+	let h;
 	function B(t) {
-		m(t);
+		h(t);
 	}
 	se(() => {
 		for (let t = 0; t < j().length; t++) E(j()[t]);
-		p.innerText = f.dag_data.nodes.map((t) => t.name).join(", ");
+		m.innerText = f.dag_data.nodes.map((t) => t.name).join(", ");
 	});
 	var k = W(y, !0, ve),
 		q = s(k),
@@ -131,16 +131,16 @@ function fe(y, f) {
 		O = s(K);
 	Z(
 		O,
-		(t) => (p = t),
-		() => p,
+		(t) => (m = t),
+		() => m,
 	),
 		te(V, () => `Clique ${D(f.clique_id)}`),
 		ue(I, {
 			get update_values() {
-				return m;
+				return h;
 			},
 			set update_values(t) {
-				m = t;
+				h = t;
 			},
 			get init_dag_data() {
 				return f.dag_data;
@@ -151,7 +151,7 @@ function fe(y, f) {
 		U(y, k),
 		ne();
 }
-var pe = {
+var me = {
 		name: "biography",
 		version: "0.0.1",
 		private: !0,
@@ -189,7 +189,6 @@ var pe = {
 			postcss: "^8.4.38",
 			prettier: "^3.1.1",
 			"prettier-plugin-svelte": "^3.1.2",
-			"rollup-plugin-copy": "^3.5.0",
 			svelte: "^5.0.0-next.1",
 			"svelte-check": "^3.6.0",
 			tailwindcss: "^3.4.1",
@@ -204,10 +203,10 @@ var pe = {
 			echarts: "^5.5.0",
 		},
 	},
-	me = () => {
+	he = () => {
 		document.getElementById("search_error_container").classList.add("hidden");
 	},
-	he = X(
+	pe = X(
 		'<div class="flex justify-center justify-items-center mt-2 space-x-4"><div class="flex-col text-center justify-center justify-center w-1/3 z-0"><div class="flex flex-col gap-4 w-full"><div class="skeleton h-32 w-full"></div> <div class="skeleton h-4 w-28"></div> <div class="skeleton h-4 w-full"></div> <div class="skeleton h-4 w-full"></div></div></div> <div class="w-1/4 z-1"><div class="skeleton w-full h-32"></div></div></div>',
 	),
 	_e = X(
@@ -215,14 +214,14 @@ var pe = {
 	);
 function Ee(y, f) {
 	re(f, !0);
-	function p(e) {
+	function m(e) {
 		const n = document.getElementById("search_error");
 		(n.textContent = e),
 			document
 				.getElementById("search_error_container")
 				.classList.remove("hidden");
 	}
-	function h() {
+	function p() {
 		const e = document.getElementById("search_error");
 		(e.textContent = ""),
 			document.getElementById("search_error_container").classList.add("hidden");
@@ -232,33 +231,33 @@ function Ee(y, f) {
 			.then((r) => {
 				if (!r.ok)
 					throw (
-						(p(`Error fetching data for clique ${e}`),
+						(m(`Error fetching data for clique ${e}`),
 						c(o, !1),
 						new Error(`Error fetching data for clique ${e}`))
 					);
-				return h(), r.json();
+				return p(), r.json();
 			})
 			.then((r) => {
 				fetch(`../data/clique/table/${e}.json`)
 					.then((a) => {
 						if (!a.ok)
 							throw (
-								(p(`Error fetching table data for clique ${e}`),
+								(m(`Error fetching table data for clique ${e}`),
 								c(o, !1),
 								new Error(`Error fetching table data for clique ${e}`))
 							);
-						return h(), a.json();
+						return p(), a.json();
 					})
 					.then((a) => {
 						fetch(`../data/clique/color/${e}.json`)
 							.then((v) => {
 								if (!v.ok)
 									throw (
-										(p(`Error fetching color data for clique ${e}`),
+										(m(`Error fetching color data for clique ${e}`),
 										c(o, !1),
 										new Error(`Error fetching color data for clique ${e}`))
 									);
-								return h(), v.json();
+								return p(), v.json();
 							})
 							.then((v) => {
 								const N = document.getElementById(n);
@@ -282,10 +281,10 @@ function Ee(y, f) {
 		(n.innerHTML = ""), c(o, !0);
 		const r = x(M)[e];
 		if (r === void 0) {
-			p(`No cliques contain ${e}`), c(o, !1);
+			m(`No cliques contain ${e}`), c(o, !1);
 			return;
 		}
-		h();
+		p();
 		for (let a = 0; a < r.length; a += 1) {
 			const v = document.createElement("div");
 			(v.id = `clique_container_${a}`),
@@ -309,7 +308,7 @@ function Ee(y, f) {
 		_ = w([]);
 	let M = A(w({})),
 		E = A((e) => {}),
-		m = A((e) => {});
+		h = A((e) => {});
 	se(() => {
 		ce([
 			"../data/info/node_info.json",
@@ -322,7 +321,7 @@ function Ee(y, f) {
 				if (n.is_range)
 					for (let a = n.range.start; a <= n.range.end; a++) _.push(`${a}`);
 				else _.push(...n.items);
-				x(m)(_);
+				x(h)(_);
 				const r = e[1];
 				if (r.is_range)
 					for (let a = r.range.start; a <= r.range.end; a++) u.push(`${a}`);
@@ -355,7 +354,7 @@ function Ee(y, f) {
 		z = s(T),
 		H = i(s(z)),
 		l = s(H);
-	te(l, () => `BioGraphy v${D(pe.version)}`),
+	te(l, () => `BioGraphy v${D(me.version)}`),
 		ee(J, {
 			get update_items() {
 				return x(E);
@@ -376,10 +375,10 @@ function Ee(y, f) {
 		}),
 		ee(O, {
 			get update_items() {
-				return x(m);
+				return x(h);
 			},
 			set update_items(e) {
-				c(m, w(e));
+				c(h, w(e));
 			},
 			get init_items() {
 				return _;
@@ -389,12 +388,12 @@ function Ee(y, f) {
 				G(e);
 			},
 		}),
-		(g.__click = [me]),
+		(g.__click = [he]),
 		le(
 			b,
 			() => x(o),
 			(e) => {
-				var n = W(e, !0, he);
+				var n = W(e, !0, pe);
 				U(e, n);
 			},
 			null,
