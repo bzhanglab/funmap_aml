@@ -1,139 +1,51 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/0.DoUMjLY3.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DiZJVNg6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.C-Oyk4u9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.CKBWl8gs.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BFwZAOiQ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/main-client.DGIB22UG.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.B6bfPW4H.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/if.rchw73mS.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DgFKq3sg.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/lifecycle.IRmfTt7O.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/3.Bb2Je_Qn.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Table.WCs0wPwf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Dag.DmkDWmJ4.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--ssr:0--><!--ssr:1--><!--ssr:if:true--><!--ssr:3--><!--ssr:4--><!--ssr:5--><div class="flex flex-col h-screen"><main class="justify-items-center mb-auto flex-col overflow-visible"><div class="mt-10 flex mx-auto justify-center justify-items-center"><article class="prose"><h1 class="text-center">AML FunMap Clique Search</h1> <p>Search by Clique ID or genes to view information about Cliques and their associated
+					features.</p></article></div> <div class="flex text-center justify-center justify-center mt-3 mb-auto mx-auto space-x-4 justify-items-center"><div class="p-1 bg-base-100 rounded-lg w-1/4"><!--ssr:6--><form><div class="p-1 bg-base-100 w-full rounded-lg"><div class="flex"><div class="join"><div class="dropdown join-item"><label class="!focus:outline-none bg-white !focus:outline-0 !focus:border-0 input input-bordered join-item flex items-center gap-2">Clique: <input class="grow !focus:outline-none !focus:outline-0 !focus:border-0" placeholder="Choose a node" value=""></label> <ul tabindex="0" class="dropdown-content bg-white z-[1] menu p-2 shadow rounded-box w-full max-h-80 flex-nowrap overflow-auto"><!--ssr:9--><!--ssr:12--><li><a></a></li><!--ssr:12--><!--ssr:9--> <!--ssr:10--><!--ssr:if:false--><!--ssr:10--></ul></div> <button class="btn btn-outline bg-white z-10 join-item">Search</button></div> <button style="display: none;" type="submit">Submit</button></div> <!--ssr:11--><!--ssr:if:false--><!--ssr:11--></div></form><!--ssr:6--></div> <div class="p-1 bg-base-100 rounded-lg w-1/4"><!--ssr:7--><form><div class="p-1 bg-base-100 w-full rounded-lg"><div class="flex"><div class="join"><div class="dropdown join-item"><label class="!focus:outline-none bg-white !focus:outline-0 !focus:border-0 input input-bordered join-item flex items-center gap-2">Gene: <input class="grow !focus:outline-none !focus:outline-0 !focus:border-0" placeholder="Choose a node" value=""></label> <ul tabindex="0" class="dropdown-content bg-white z-[1] menu p-2 shadow rounded-box w-full max-h-80 flex-nowrap overflow-auto"><!--ssr:13--><!--ssr:16--><li><a></a></li><!--ssr:16--><!--ssr:13--> <!--ssr:14--><!--ssr:if:false--><!--ssr:14--></ul></div> <button class="btn btn-outline bg-white z-10 join-item">Search</button></div> <button style="display: none;" type="submit">Submit</button></div> <!--ssr:15--><!--ssr:if:false--><!--ssr:15--></div></form><!--ssr:7--></div></div> <div class="mt-10 hidden flex mx-auto justify-center justify-items-center text-base-100" id="search_error_container"><div role="alert" class="w-1/4 alert alert-error text-center flex items-center text-neutral-950"><a class="close ml-2 hover:bg-base-100/10 hover:bg- rounded-lg p-1" aria-label="close"><svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></a> <span id="search_error"></span></div></div> <!--ssr:8--><!--ssr:if:true--><div class="flex justify-center justify-items-center mt-2 space-x-4"><div class="flex-col text-center justify-center justify-center w-1/3 z-0"><div class="flex flex-col gap-4 w-full"><div class="skeleton h-32 w-full"></div> <div class="skeleton h-4 w-28"></div> <div class="skeleton h-4 w-full"></div> <div class="skeleton h-4 w-full"></div></div></div> <div class="w-1/4 z-1"><div class="skeleton w-full h-32"></div></div></div><!--ssr:8--> <div id="clique_container" class="w-full mt-2 flex-col px-20"></div></main> <footer class="footer footer-center p-4 bg-base-100 text-base-content"><aside><p>Built with <a class="link" href="https://github.com/bzhanglab/biography/" target="_blank">BioGraphy v0.0.1</a></p></aside></footer></div><!--ssr:5--><!--ssr:4--><!--ssr:3--><!--ssr:1--> <!--ssr:2--><!--ssr:if:false--><!--ssr:2--><!--ssr:0-->
+			
+			<script>
+				{
+					__sveltekit_5j1elv = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="../favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+					const element = document.currentScript.parentElement;
 
-	<link href="../_app/immutable/assets/0.Dty14u1P.css" rel="stylesheet">
-	<link rel="modulepreload" href="../_app/immutable/entry/start.DuS4Ro4q.js">
-	<link rel="modulepreload" href="../_app/immutable/chunks/entry.D65eOLvy.js">
-	<link rel="modulepreload" href="../_app/immutable/chunks/runtime.CKBWl8gs.js">
-	<link rel="modulepreload" href="../_app/immutable/entry/app.CgdgG5eb.js">
-	<link rel="modulepreload" href="../_app/immutable/chunks/main-client.CMEboYaW.js">
-	<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.G76goc0E.js">
-	<link rel="modulepreload" href="../_app/immutable/chunks/if.BRpKpGmk.js">
-	<link rel="modulepreload" href="../_app/immutable/nodes/0.DCEDGMSw.js">
-	<link rel="modulepreload" href="../_app/immutable/chunks/lifecycle.IRmfTt7O.js">
-	<link rel="modulepreload" href="../_app/immutable/nodes/3.1JyZJLJX.js">
-	<link rel="modulepreload" href="../_app/immutable/chunks/Fetcher.CTYW50Zj.js">
-	<link rel="modulepreload" href="../_app/immutable/chunks/Dag.3tA49ip-.js">
-</head>
+					const data = [null,null];
 
-<body data-sveltekit-preload-data="hover">
-	<div style="display: contents"><!--ssr:0--><!--ssr:1--><!--ssr:if:true--><!--ssr:3--><!--ssr:4--><!--ssr:5-->
-		<div class="flex flex-col h-screen">
-			<main class="justify-items-center mb-auto flex-col overflow-visible">
-				<div class="mt-10 flex mx-auto justify-center justify-items-center">
-					<article class="prose">
-						<h1 class="text-center">AML FunMap Clique Search</h1>
-						<p>Search by Clique ID or Gene to view information about Cliques and their associated
-							features.</p>
-					</article>
-				</div>
-				<div
-					class="flex text-center justify-center justify-center mt-3 mb-auto mx-auto space-x-4 justify-items-center">
-					<div class="p-1 bg-base-100 rounded-lg w-1/4"><!--ssr:6-->
-						<form>
-							<div class="p-1 bg-base-100 w-full rounded-lg">
-								<div class="flex">
-									<div class="join">
-										<div class="dropdown join-item"><label
-												class="!focus:outline-none bg-white !focus:outline-0 !focus:border-0 input input-bordered join-item flex items-center gap-2">Clique:
-												<input class="grow !focus:outline-none !focus:outline-0 !focus:border-0"
-													placeholder="Choose a node" value=""></label>
-											<ul tabindex="0"
-												class="dropdown-content bg-white z-[1] menu p-2 shadow rounded-box w-full max-h-80 flex-nowrap overflow-auto">
-												<!--ssr:9--><!--ssr:12-->
-												<li><a></a></li><!--ssr:12--><!--ssr:9-->
-												<!--ssr:10--><!--ssr:if:false--><!--ssr:10-->
-											</ul>
-										</div> <button class="btn btn-outline bg-white z-10 join-item">Search</button>
-									</div> <button style="display: none;" type="submit">Submit</button>
-								</div> <!--ssr:11--><!--ssr:if:false--><!--ssr:11-->
-							</div>
-						</form><!--ssr:6-->
-					</div>
-					<div class="p-1 bg-base-100 rounded-lg w-1/4"><!--ssr:7-->
-						<form>
-							<div class="p-1 bg-base-100 w-full rounded-lg">
-								<div class="flex">
-									<div class="join">
-										<div class="dropdown join-item"><label
-												class="!focus:outline-none bg-white !focus:outline-0 !focus:border-0 input input-bordered join-item flex items-center gap-2">Gene:
-												<input class="grow !focus:outline-none !focus:outline-0 !focus:border-0"
-													placeholder="Choose a node" value=""></label>
-											<ul tabindex="0"
-												class="dropdown-content bg-white z-[1] menu p-2 shadow rounded-box w-full max-h-80 flex-nowrap overflow-auto">
-												<!--ssr:13--><!--ssr:16-->
-												<li><a></a></li><!--ssr:16--><!--ssr:13-->
-												<!--ssr:14--><!--ssr:if:false--><!--ssr:14-->
-											</ul>
-										</div> <button class="btn btn-outline bg-white z-10 join-item">Search</button>
-									</div> <button style="display: none;" type="submit">Submit</button>
-								</div> <!--ssr:15--><!--ssr:if:false--><!--ssr:15-->
-							</div>
-						</form><!--ssr:7-->
-					</div>
-				</div>
-				<div class="mt-10 hidden flex mx-auto justify-center justify-items-center text-base-100"
-					id="search_error_container">
-					<div role="alert" class="w-1/4 alert alert-error text-center flex items-center text-neutral-950"><a
-							class="close ml-2 hover:bg-base-100/10 hover:bg- rounded-lg p-1" aria-label="close"><svg
-								xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none"
-								viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-							</svg></a> <span id="search_error"></span></div>
-				</div> <!--ssr:8--><!--ssr:if:true-->
-				<div class="flex justify-center justify-items-center mt-2 space-x-4">
-					<div class="flex-col text-center justify-center justify-center w-1/3 z-0">
-						<div class="flex flex-col gap-4 w-full">
-							<div class="skeleton h-32 w-full"></div>
-							<div class="skeleton h-4 w-28"></div>
-							<div class="skeleton h-4 w-full"></div>
-							<div class="skeleton h-4 w-full"></div>
-						</div>
-					</div>
-					<div class="w-1/4 z-1">
-						<div class="skeleton w-full h-32"></div>
-					</div>
-				</div><!--ssr:8-->
-				<div id="clique_container" class="w-full mt-2 flex-col px-20"></div>
-			</main>
-			<footer class="footer footer-center p-4 bg-base-100 text-base-content">
-				<aside>
-					<p>Built with <a class="link" href="https://github.com/bzhanglab/biography/"
-							target="_blank">BioGraphy v0.0.1</a></p>
-				</aside>
-			</footer>
-		</div><!--ssr:5--><!--ssr:4--><!--ssr:3--><!--ssr:1--> <!--ssr:2--><!--ssr:if:false--><!--ssr:2--><!--ssr:0-->
-
-		<script>
-			{
-				__sveltekit_xas0qb = {
-					base: new URL("..", location).pathname.slice(0, -1)
-				};
-
-				const element = document.currentScript.parentElement;
-
-				const data = [null, null];
-
-				Promise.all([
-					import("../_app/immutable/entry/start.DuS4Ro4q.js"),
-					import("../_app/immutable/entry/app.CgdgG5eb.js")
-				]).then(([kit, app]) => {
-					kit.start(app, element, {
-						node_ids: [0, 3],
-						data,
-						form: null,
-						error: null
+					Promise.all([
+						import("../_app/immutable/entry/start.DiZJVNg6.js"),
+						import("../_app/immutable/entry/app.BFwZAOiQ.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
 					});
-				});
-			}
-		</script>
-	</div>
-</body>
-
+				}
+			</script>
+		</div>
+	</body>
 </html>
